@@ -2,6 +2,8 @@
 
 This package installs an udev rule to allow communication via usb with the Nintendo Switch without root access. It does that by changing the permissions (mode) to 666 (rw-rw-rw-).
 
+After installing you may need to replug your device.
+
 # Installing
 
 ## Manually
@@ -32,7 +34,7 @@ yay -S nx-udev
 
 ### Debian, Ubuntu, or any other distro that has `apt`
 
-I've generated a debian package in the [releases](https://github.com/pheki/nx-udev/releases), so you can just install it using `dpkg -i`:
+I've generated a debian package in the [releases](https://github.com/pheki/nx-udev/releases), so you can just install it with `dpkg -i`:
 
 ```bash
 # Download the debian package
