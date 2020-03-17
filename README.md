@@ -8,10 +8,10 @@ After installing you may need to replug your device.
 
 ## Manually
 
-To install manually, just copy `60-nx.rules` to `/etc/udev/rules.d/`:
+To install manually, just copy `60-nx.rules` and `60-nx-rcm.rules` to `/etc/udev/rules.d/`:
 
 ```bash
-cp 60-nx.rules /etc/udev/rules.d/
+cp *.rules /etc/udev/rules.d/
 ```
 
 ## Via Package
