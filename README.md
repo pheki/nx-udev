@@ -6,14 +6,6 @@ After installing you may need to replug your device.
 
 # Installing
 
-## Manually
-
-To install manually, just copy `60-nx.rules` and `60-nx-rcm.rules` to `/etc/udev/rules.d/`:
-
-```bash
-cp *.rules /etc/udev/rules.d/
-```
-
 ## Via Package
 
 ### Arch Linux
@@ -38,7 +30,15 @@ I've generated a debian package in the [releases](https://github.com/pheki/nx-ud
 
 ```bash
 # Download the debian package
-wget https://github.com/pheki/nx-udev/releases/download/v0.1.0/nx-udev_0.1.0_all.deb
+wget https://github.com/pheki/nx-udev/releases/download/v0.1.1/nx-udev_0.1.1_all.deb
 # Install it
-sudo dpkg -i nx-udev_0.1.0_all.deb
+sudo dpkg -i nx-udev_0.1.1_all.deb
+```
+
+## Manually
+
+To install manually, just copy `60-nx.rules` and `60-nx-rcm.rules` to `/etc/udev/rules.d/`:
+
+```bash
+cp *.rules /etc/udev/rules.d/
 ```
