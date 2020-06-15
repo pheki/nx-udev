@@ -30,9 +30,9 @@ I've generated a debian package in the [releases](https://github.com/pheki/nx-ud
 
 ```bash
 # Download the debian package
-wget https://github.com/pheki/nx-udev/releases/download/v0.1.1/nx-udev_0.1.1_all.deb
+wget https://github.com/pheki/nx-udev/releases/latest/download/nx-udev_latest_all.deb
 # Install it
-sudo dpkg -i nx-udev_0.1.1_all.deb
+sudo dpkg -i nx-udev_latest_all.deb
 ```
 
 ## Manually
@@ -40,5 +40,7 @@ sudo dpkg -i nx-udev_0.1.1_all.deb
 To install manually, just copy `60-nx.rules` and `60-nx-rcm.rules` to `/etc/udev/rules.d/`:
 
 ```bash
+# Download the repository
+git clone https://github.com/pheki/nx-udev.git && cd nx-udev
 cp *.rules /etc/udev/rules.d/
 ```
